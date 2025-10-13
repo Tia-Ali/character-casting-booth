@@ -160,6 +160,10 @@ Forms allow users to input data. Common elements include:
 </form>
 ```
 
+>HTML forms are commonly integrated with Query String Parameters to send user input to a server using the GET method. They are key-value pairs added to the end of a URL to pass data between web pages or to a server. They follow a question mark (?) and are separated by ampersands (&). For example, in the URL `https://example.com/search?query=books&page=2`, `query=books` and `page=2` are query string parameters. [Click here for a guide on using forms with query string parameters](tbc)
+
+
+
 ### Nesting Elements
 
 HTML elements can be nested inside each other to build complex structures

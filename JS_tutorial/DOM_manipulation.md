@@ -1,11 +1,13 @@
 # JavaScript DOM Manipulation Guide
 
 ## What is the DOM?
+
 The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects, allowing JavaScript to interact with the page.
 
 ## Basic DOM Manipulation
 
 ### Selecting Elements
+
 ```javascript
 // By ID
 const header = document.getElementById('header');
@@ -22,6 +24,7 @@ const firstMatch = document.querySelector('.special');
 ```
 
 ### Modifying Content
+
 ```javascript
 // Change text content
 element.textContent = 'New text';
@@ -35,6 +38,7 @@ linkElement.href = 'https://example.com';
 ```
 
 ### Changing Styles
+
 ```javascript
 // Direct style modification
 element.style.color = 'blue';
@@ -48,8 +52,11 @@ element.classList.toggle('visible');
 // Multiple styles at once
 element.style.cssText = 'color: red; font-size: 20px;';
 ```
+
 ## Creating and Modifying Elements
+
 ### Creating New Elements
+
 ```javascript
 // Create new element
 const newDiv = document.createElement('div');
@@ -66,6 +73,7 @@ const clonedElement = existingElement.cloneNode(true);
 ```
 
 ### Removing Elements
+
 ```javascript
 // Remove child element
 parentElement.removeChild(childElement);
@@ -75,7 +83,9 @@ element.remove();
 ```
 
 ## Working with Events
+
 ### Event Listeners
+
 ```javascript
 // Remove child element
 parentElement.removeChild(childElement);
@@ -84,7 +94,8 @@ parentElement.removeChild(childElement);
 element.remove();
 ```
 
-#### Common Event Types:
+#### Common Event Types
+
 - click - Mouse click
 - dblclick - Double click
 - mouseenter/mouseleave - Hover effects
@@ -94,7 +105,9 @@ element.remove();
 - scroll - Page scrolling
 
 ## Forms and Input Handling
+
 ### Accessing Form Data
+
 ```javascript
 const form = document.querySelector('form');
 
@@ -108,6 +121,7 @@ form.addEventListener('submit', (e) => {
   console.log({ username, password });
 });
 ```
+
 ### Input Events
 
 ```javascript
