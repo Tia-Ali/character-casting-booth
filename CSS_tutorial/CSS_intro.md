@@ -4,7 +4,7 @@ CSS (Cascading Style Sheets) is used to style and layout HTML content. It contro
 
 This guide introduces CSS basics with examples that you can modify and test in your own HTML files.
 
-### How to Add CSS
+## How to Add CSS
 
 CSS can be added in three main ways:
 
@@ -32,14 +32,17 @@ CSS can be added in three main ways:
 </html>
 ```
 
-- **External** - Link to a separate *.css* file using a `<link>` tag.
+- **External** - Link to a separate *.css* file using a `<link>` tag in the `<head>` element.
 
 HTML file:
+
 ```html
 <!-- In HTML file -->
 <link rel="stylesheet" href="styles.css">
 ```
+
 CSS file:
+
 ```css
 /* In styles.css */
 p {
@@ -49,7 +52,7 @@ p {
 
 ### Selectors and Properties
 
-A CSS rule targets elements using selectors and applies properties with values.
+A CSS rule targets elements using selectors and applies the defined properties to those elements.
 
 ```css
 h1 {
@@ -63,11 +66,14 @@ h1 {
 Use classes to style groups of elements, and IDs to style a specific element.
 
 HTML file:
+
 ```html
 <p class="note">This is a note.</p>
 <p id="highlight">This is highlighted.</p>
 ```
+
 CSS file:
+
 ```css
 .note {
   font-style: italic;
@@ -78,6 +84,34 @@ CSS file:
   background-color: yellow;
 }
 ```
+
+Assigning a class `class` property to a `div` container allows you to assign CSS rules to all of the elements within it.
+
+Inline example of styling a `div` with the class of `myDiv`:
+
+```html
+<html>
+<head>
+<style>
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="myDiv">
+  <h2>This is a heading in a div element</h2>
+  <p>This is some text in a div element.</p>
+</div>
+
+</body>
+</html>
+```
+
+(SOURCE: https://www.w3schools.com/tags/tag_div.asp)
 
 ### Colors
 
@@ -110,9 +144,9 @@ p {
 }
 ```
 
-### Box Model (Padding, Margin, Border)
+## Box Model (Padding, Margin, Border)
 
-Every HTML element is a box with `padding`, `border`, and `margin`.
+The `Box Model` considers every HTML element as a box with 4x parts, the content, surrounded by `padding`, a `border`, and a `margin`.
 
 ```css
 div {
@@ -124,7 +158,9 @@ div {
 
 ### Backgrounds
 
-You can style the background of any element with a color or image.
+You can style the background of any element with a color or image. 
+
+For a consistent background across your whole page apply the background-color style rule to the body of your HTML page.
 
 ```css
 body {
@@ -169,6 +205,7 @@ Flexbox (Flexible Box Layout) makes it easy to create layouts where elements aut
 To use Flexbox, apply `display: flex;` to a container. The items inside will automatically become flex items.
 
 HTML file:
+
 ```html
 <div class="flex-container">
   <div class="box">One</div>
@@ -176,7 +213,9 @@ HTML file:
   <div class="box">Three</div>
 </div>
 ```
+
 CSS file:
+
 ```css
 .flex-container {
   display: flex;
@@ -239,4 +278,3 @@ By default, Flexbox items try to stay on one line. Enable wrapping with `flex-wr
   gap: 10px;
 }
 ```
-

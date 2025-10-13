@@ -162,11 +162,11 @@ Forms allow users to input data. Common elements include:
 
 >HTML forms are commonly integrated with Query String Parameters to send user input to a server using the GET method. They are key-value pairs added to the end of a URL to pass data between web pages or to a server. They follow a question mark (?) and are separated by ampersands (&). For example, in the URL `https://example.com/search?query=books&page=2`, `query=books` and `page=2` are query string parameters. [Click here for a guide on using forms with query string parameters](tbc)
 
+### Nesting Elements and the Div Tag
 
+HTML elements can be nested inside each other to build complex structures, as you've seen, the content to be displayed on your page is nested within `<body>` tags.
 
-### Nesting Elements
-
-HTML elements can be nested inside each other to build complex structures
+Another powerful feature for adding structure to your HTML is using the `div` (division) tag. Div tags allow you to put you HTML elements into 'containers' which can be referenced, and have formatting applied to them as a group.
 
 ```html
 <div>
@@ -174,5 +174,7 @@ HTML elements can be nested inside each other to build complex structures
   <p><em>The Hobbit</em> by J.R.R. Tolkien</p>
 </div>
 ```
+
+Div tags are particularly useful when used with CSS, as you'll see in the next tutorial.
 
 [Click here for an HTML Cheat Sheet for quick reference for a range of tags](HTML_tags_cheatsheet.md)
