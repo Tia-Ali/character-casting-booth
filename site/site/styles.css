@@ -1,0 +1,102 @@
+body {
+margin: 0;
+font-family: 'Fredoka', Arial, sans-serif;
+background: #FFD84D;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+min-height: 100vh;
+text-align: center;
+}
+
+.wrap {
+width: 100%;
+max-width: 650px;
+padding: 20px;
+}
+
+.card {
+background: white;
+border-radius: 30px;
+padding: 35px;
+
+box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+h1 {
+color: #FF4F6D;
+font-size: 42px;
+margin-bottom: 8px;
+}
+
+h2, h3 {
+color: #FF4F6D;
+}
+
+.sub {
+color: #FF6A4D;
+margin-bottom: 25px;
+font-size: 18px;
+}
+
+label {
+display: block;
+margin-top: 15px;
+font-weight: 500;
+color: #FF6A4D;
+}
+
+select {
+width: 100%;
+padding: 12px;
+margin-top: 6px;
+
+border-radius: 14px;
+border: 2px solid #FF6A4D;
+
+font-size: 16px;
+font-family: 'Fredoka', Arial, sans-serif;
+}
+
+button {
+margin-top: 22px;
+
+background: #FF4F6D;
+color: white;
+
+border: none;
+border-radius: 40px;
+
+padding: 14px 24px;
+font-size: 18px;
+
+font-family: 'Fredoka', Arial, sans-serif;
+
+cursor: pointer;
+
+transition: transform 0.2s ease, background 0.2s ease;
+}
+
+button:hover {
+background: #FF2C55;
+transform: scale(1.08);
+}
+
+pre {
+margin-top: 22px;
+padding: 18px;
+
+background: #FFF4F6;
+border-radius: 16px;
+
+text-align: left;
+
+border: 2px solid #FF6A4D;
+
+overflow-x: auto;
+min-height: 120px;
+
+font-family: 'Fredoka', Arial, sans-serif;
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Nyra Voss",
+    "role": "Starship Navigator",
+    "world": "Space Adventure",
+    "mood": "Mysterious",
+    "trait": "Speaks only in encrypted poetry",
+    "voice_line": "The stars are not maps. They are warnings."
+  },
+  {
+    "name": "Cass Arden",
+    "role": "Memory Courier",
+    "world": "Space Adventure",
+    "mood": "Heroic",
+    "trait": "Delivers messages that arrive before they’re sent",
+    "voice_line": "Don’t ask where I got this. Just read it."
+  },
+  {
+    "name": "Vera Ion",
+    "role": "Neon Mechanic",
+    "world": "Cyberpunk City",
+    "mood": "Chaotic",
+    "trait": "Repairs robots with spare arcade parts",
+    "voice_line": "If it sparks, I can fix it."
+  },
+  {
+    "name": "Taro Quill",
+    "role": "Signal Hacker",
+    "world": "Cyberpunk City",
+    "mood": "Mysterious",
+    "trait": "Can hear electricity humming",
+    "voice_line": "The city doesn’t sleep. It just changes channels."
+  },
+  {
+    "name": "Amaya Drift",
+    "role": "Xeno-Botanist",
+    "world": "Alien Worlds",
+    "mood": "Heroic",
+    "trait": "Keeps a notebook full of plants that shouldn’t exist",
+    "voice_line": "If it grows here, it has a story. So do we."
+  },
+  {
+    "name": "Zilo Fern",
+    "role": "Alien Guide",
+    "world": "Alien Worlds",
+    "mood": "Chaotic",
+    "trait": "Collects glowing mushrooms for breakfast",
+    "voice_line": "Trust me. That one only explodes sometimes."
+  }
+]

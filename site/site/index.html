@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Character Casting Booth</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<main class="wrap">
+
+<h1>Character Casting Booth</h1>
+
+<p class="sub">
+Choose a world and a mood, then meet a brand-new character.
+</p>
+
+<section class="card">
+
+<h2>Cast a character</h2>
+
+<form id="castForm">
+
+<label>
+World
+<select id="genre">
+<option value="space">Space Adventure</option>
+<option value="cyberpunk">Cyberpunk City</option>
+<option value="alien">Alien Worlds</option>
+</select>
+</label>
+
+<label>
+Mood
+<select id="mood">
+<option value="heroic">Heroic</option>
+<option value="mysterious">Mysterious</option>
+<option value="chaotic">Chaotic</option>
+</select>
+</label>
+
+<button type="submit">Meet your character</button>
+
+</form>
+
+
+<pre id="output">
+Your character will appear here…
+</pre>
+
+</section>
+
+</main>
+
+<script src="app.js"></script>
+
+</body>
+</html>
