@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Nyra Voss",
+    "role": "Starship Navigator",
+    "trait": "Speaks only in encrypted poetry",
+    "voice_line": "The stars are not maps. They are warnings."
+  },
+  {
+    "name": "Cass Arden",
+    "role": "Memory Courier",
+    "trait": "Delivers messages that arrive before they’re sent",
+    "voice_line": "Don't ask where I got this. Just read it."
+  },
+  {
+    "name": "Vera Ion",
+    "role": "Neon Mechanic",
+    "trait": "Repairs robots with arcade parts",
+    "voice_line": "If it sparks, I can fix it."
+  }
+]

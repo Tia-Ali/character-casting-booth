@@ -1,7 +1,7 @@
 body {
 margin: 0;
 font-family: 'Fredoka', Arial, sans-serif;
-background: #FFD84D;
+background: #ff4f6d;
 
 display: flex;
 justify-content: center;
@@ -17,35 +17,36 @@ max-width: 650px;
 padding: 20px;
 }
 
-.card {
-background: white;
-border-radius: 30px;
-padding: 35px;
-
-box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-}
-
 h1 {
-color: #FF4F6D;
+color: #ffd84d;
 font-size: 42px;
 margin-bottom: 8px;
 }
 
-h2, h3 {
-color: #FF4F6D;
-}
-
 .sub {
-color: #FF6A4D;
+color: #ffd84d;
 margin-bottom: 25px;
 font-size: 18px;
+}
+
+.card {
+background: #ffd84d;
+border-radius: 30px;
+padding: 35px;
+
+box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+
+color: #ff4f6d;
+}
+
+h2, h3 {
+color: #ff4f6d;
 }
 
 label {
 display: block;
 margin-top: 15px;
 font-weight: 500;
-color: #FF6A4D;
 }
 
 select {
@@ -54,49 +55,66 @@ padding: 12px;
 margin-top: 6px;
 
 border-radius: 14px;
-border: 2px solid #FF6A4D;
+border: none;
 
 font-size: 16px;
 font-family: 'Fredoka', Arial, sans-serif;
 }
 
 button {
-margin-top: 22px;
-
-background: #FF4F6D;
-color: white;
+background: #ff4f6d;
+color: #ffd84d;
 
 border: none;
 border-radius: 40px;
 
-padding: 14px 24px;
+padding: 14px 26px;
 font-size: 18px;
 
 font-family: 'Fredoka', Arial, sans-serif;
 
 cursor: pointer;
 
+margin-top: 35px;
+
 transition: transform 0.2s ease, background 0.2s ease;
 }
 
 button:hover {
-background: #FF2C55;
 transform: scale(1.08);
+background: #ff6a83;
 }
 
 pre {
 margin-top: 22px;
 padding: 18px;
 
-background: #FFF4F6;
+background: rgba(255,255,255,0.35);
 border-radius: 16px;
 
 text-align: left;
 
-border: 2px solid #FF6A4D;
+color: #ff4f6d;
 
-overflow-x: auto;
 min-height: 120px;
+}
 
-font-family: 'Fredoka', Arial, sans-serif;
+/* Character reveal animation */
+
+.reveal {
+animation: revealCharacter 0.5s ease;
+}
+
+@keyframes revealCharacter {
+
+0% {
+opacity: 0;
+transform: scale(0.9);
+}
+
+100% {
+opacity: 1;
+transform: scale(1);
+}
+
 }
