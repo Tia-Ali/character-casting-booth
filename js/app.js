@@ -13,15 +13,11 @@ try {
 const response = await fetch("data/character.json");
 const characters = await response.json();
 
-/* filter characters by genre */
+/* pick random character */
 
-const matchingCharacters = characters.filter(character => character.genre === genre);
+const character = characters[Math.floor(Math.random() * characters.length)];
 
-/* pick a random one */
-
-const character = matchingCharacters[Math.floor(Math.random() * matchingCharacters.length)];
-
-/* build output text */
+/* build output */
 
 const text = `
 Name: ${character.name}
@@ -33,14 +29,12 @@ World: ${genre}
 Mood: ${mood}
 
 Voice Line:
-"${character.voice}"
+"${character.voice_line}"
 `;
-
-/* display result */
 
 output.textContent = text;
 
-/* trigger animation */
+/* animation */
 
 output.classList.remove("reveal");
 void output.offsetWidth;
